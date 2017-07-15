@@ -1,0 +1,4 @@
+{
+    "preset": ["babel-present-env", "react"]
+}
+//Test
