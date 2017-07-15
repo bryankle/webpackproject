@@ -22,7 +22,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name].[chunkhash].js' // A hash a string of numbers. The hash string will be read to determine if the file has changed and based on the hash, it will prompt an updated js file or original cache
   },
   module: {
     rules: [
@@ -39,7 +39,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor'
+      name: ['vendor', 'manifest']
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
