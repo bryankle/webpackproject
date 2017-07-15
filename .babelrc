@@ -1,4 +1,4 @@
 {
-    "preset": ["babel-present-env", "react"]
+    "presetw": ["babel-preset-env", "react"]
 }
 //Test
