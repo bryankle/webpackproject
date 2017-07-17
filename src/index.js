@@ -8,7 +8,8 @@ import Routes from './router';
 import '../style/materialize.css';
 import '../style/react-range.css';
 import '../style/style.css';
-console.log('hi!');
+
+console.log('Webpack dev server is watching and will rebuild when this is added!')
 const App = () => {
   const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
